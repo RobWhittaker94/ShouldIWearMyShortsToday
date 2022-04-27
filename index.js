@@ -4,13 +4,7 @@ import SeasonDisplay from "./SeasonDisplay";
 import Loading from "./Loading";
 
 class App extends React.Component {
-  //   constructor(props) {
-  //     super(props);
-
-  //     // lat = latitude NOTES
-  //     // this is the only time we do direct assignment to this.state
-  //     this.state = { lat: null, errorMessage: "" };
-  //   }
+ 
 
   state = { lat: null, errorMessage: "" };
 
@@ -25,11 +19,7 @@ class App extends React.Component {
     );
   }
 
-  //   componentDidUpdate() {
-  //     console.log("My component was just updated - it rendered!");
-  //   }
-
-  // React says we have to define render!!
+ 
   render() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div>Error: {this.state.errorMessage}</div>;
